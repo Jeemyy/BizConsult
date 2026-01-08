@@ -11,7 +11,7 @@ class InputLabelv1 extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $type, public string $locale, public string $name='', public string $value='')
+    public function __construct(public string $type, public string $locale, public string $name='', public string $value='', public string $class='form-control')
     {
         //
     }

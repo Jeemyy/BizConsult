@@ -13,7 +13,7 @@ class ServiceController extends Controller
      * Display a listing of the resource.
      */
     // private const DIR  = 'admin.services.';
-    
+
     public function index()
     {
         $services = Service::paginate(config('pagination.count'));
@@ -35,7 +35,7 @@ class ServiceController extends Controller
     {
         $request->validated();
         Service::create($request->all());
-        return to_route('admin.services.index')->with('success', __('keywords.service_created_successfully'));
+        return to_route('admin.services.index')->with('success', __('keywords.record_created_successfully'));
     }
 
     /**
@@ -63,7 +63,7 @@ class ServiceController extends Controller
     {
         $request->validated();
         $service->update($request->all());
-        return to_route('admin.services.index')->with('success', __('keywords.service_updated_successfully'));
+        return to_route('admin.services.index')->with('success', __('keywords.record_updated_successfully'));
     }
 
     /**
@@ -72,6 +72,6 @@ class ServiceController extends Controller
     public function destroy(Service $service)
     {
         $service->delete();
-        return redirect()->back()->with('success', __('keywords.service_deleted_successfully'));
+        return redirect()->back()->with('success', __('keywords.record_deleted_successfully'));
     }
 }

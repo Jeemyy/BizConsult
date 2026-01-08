@@ -13,7 +13,9 @@ class {{ class }} extends Controller
      */
     public function index()
     {
-        //
+        {{value}} = {{ namespacedModel }}::paginate(config('pagination.count'));
+        return view('admin.{{name}}.index', get_defined_vars());
+
     }
 
     /**
@@ -21,7 +23,7 @@ class {{ class }} extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.{{name}}.create', get_defined_vars());
     }
 
     /**
@@ -29,7 +31,9 @@ class {{ class }} extends Controller
      */
     public function store({{ storeRequest }} $request)
     {
-        //
+        $request->validated();
+        {{namespacedModel}}::create($request->all());
+        return to_route('admin.{{name}}.index')->with('success', __('keywords.record_created_successfully'));
     }
 
     /**
@@ -37,7 +41,7 @@ class {{ class }} extends Controller
      */
     public function show({{ model }} ${{ modelVariable }})
     {
-        //
+        return view('admin.{{name}}.show', get_defined_vars());
     }
 
     /**
@@ -45,7 +49,7 @@ class {{ class }} extends Controller
      */
     public function edit({{ model }} ${{ modelVariable }})
     {
-        //
+        return view('admin.{{name}}.edit', get_defined_vars());
     }
 
     /**
@@ -53,7 +57,9 @@ class {{ class }} extends Controller
      */
     public function update({{ updateRequest }} $request, {{ model }} ${{ modelVariable }})
     {
-        //
+        $request->validated();
+        ${{modelVariable}}->update($request->all());
+        return to_route('admin.{{name}}.index')->with('success', __('keywords.record_updated_successfully'));
     }
 
     /**
@@ -61,6 +67,7 @@ class {{ class }} extends Controller
      */
     public function destroy({{ model }} ${{ modelVariable }})
     {
-        //
+        ${{modelVariable}}->delete();
+        return redirect()->back()->with('success', __('keywords.record_deleted_successfully'));
     }
 }

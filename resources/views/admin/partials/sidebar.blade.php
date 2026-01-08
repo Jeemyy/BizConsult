@@ -24,9 +24,15 @@
             <span>{{ __("keywords.component") }}</span>
           </p>
         <ul class="navbar-nav flex-fill w-100 mb-2">
-
+            <x-sitebar-tap href="{{ route('admin.abouts.index') }}" icon="fe-tag" text="{{ __('keywords.abouts') }}"></x-sitebar-tap>
             <x-sitebar-tap href="{{ route('admin.services.index') }}" icon="fe-codesandbox" text="{{ __('keywords.services') }}"></x-sitebar-tap>
-            <x-sitebar-tap href="{{ route('admin.services.index') }}" icon="fe-slack" text="{{ __('keywords.fetures') }}"></x-sitebar-tap>
+            <x-sitebar-tap href="{{ route('admin.features.index') }}" icon="fe-bookmark" text="{{ __('keywords.fetures') }}"></x-sitebar-tap>
+            <x-sitebar-tap href="{{ route('admin.messages.index') }}" icon="fe-mail" text="{{ __('keywords.messages') }}"></x-sitebar-tap>
+            <x-sitebar-tap href="{{ route('admin.subscribers.index') }}" icon="fe-share-2" text="{{ __('keywords.subscribers') }}"></x-sitebar-tap>
+            <x-sitebar-tap href="{{ route('admin.testimonials.index') }}" icon="fe-compass" text="{{ __('keywords.testimonials') }}"></x-sitebar-tap>
+            <x-sitebar-tap href="{{ route('admin.settings.index') }}" icon="fe-settings" text="{{ __('keywords.settings') }}"></x-sitebar-tap>
+            <x-sitebar-tap href="{{ route('admin.companies.index') }}" icon="fe-globe" text="{{ __('keywords.companies') }}"></x-sitebar-tap>
+            <x-sitebar-tap href="{{ route('admin.members.index') }}" icon="fe-users" text="{{ __('keywords.members') }}"></x-sitebar-tap>
         </ul>
 
         </nav>

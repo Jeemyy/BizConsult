@@ -16,9 +16,33 @@ class ActionButton extends Component
     public function __construct(public string $href, public string $type)
     {
         switch($type){
+            case 'create_about':
+                $this->color = 'primary';
+                $this->text = __("keywords.add_new_about");
+                break;
+            case 'create_service':
+                $this->color = 'primary';
+                $this->text = __("keywords.add_new_service");
+                break;
+            case 'create_feature':
+                $this->color = 'primary';
+                $this->text = __("keywords.add_new_feature");
+                break;
+            case 'create_testimonial':
+                $this->color = 'primary';
+                $this->text = __("keywords.add_new_testimonial");
+                break;
+            case 'create_company':
+                $this->color = 'primary';
+                $this->text = __("keywords.add_new_company");
+                break;
+            case 'create_member':
+                $this->color = 'primary';
+                $this->text = __("keywords.add_new_member");
+                break;
             case 'create':
                 $this->color = 'primary';
-                $this->text = __("keywords.addNew");
+                $this->text = __("keywords.add_new");
                 break;
             case 'show':
                 $this->color = 'success';

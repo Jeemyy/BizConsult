@@ -8,7 +8,7 @@
                     <div class="col-12">
                         <div class="d-flex justify-content-between align-items-center">
                             <h2 class="h5 page-title">{{ __('keywords.services') }}!</h2>
-                            <x-action-button href="{{ route('admin.services.create') }}" type='create'></x-action-button>
+                            <x-action-button href="{{ route('admin.services.create') }}" type='create_service'></x-action-button>
                         </div>
                     </div>
                 </div>
