@@ -7,6 +7,63 @@ return [
     'services'                     => 'Services',
     'features'                     => 'Features',
 
+    // General
+    'balance'   => 'Balance',
+    'today'     => 'Today',
+    'goal_value'    => 'Goal Value',
+    'completions'   => 'Completions',
+    'conversion'    => 'Conversion',
+    'earning'   => 'Earning',
+    'cost'  => 'Cost',
+    'revenue'   => 'Revenue',
+    'total'     => 'Total',
+
+    // Sections
+    'recent_activity'   => 'Recent Activity',
+    'recent_data'   => 'Recent Data',
+    'view_all'  => 'View all',
+    'notifications'     => 'Notifications',
+    'shortcuts'     => 'Shortcuts',
+
+    // Misc / UI
+    'date_ranges' => 'Date Ranges',
+    'dashboard_note' => 'Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui',
+    'lorem_earning' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'just_create_new_layout' => 'Just create new layout Index, form, table',
+    'has_upload_new_files_to' => 'has upload new files to',
+    'front_end_development' => 'Front-End Development',
+    'has_commented_on' => 'has commented on',
+    'advanced_table' => 'Advanced table',
+    'back_end_development' => 'Back-End Development',
+    'created_new_group_for' => 'created new group for',
+    'link_attached_to_menu' => 'Link was attached to menu',
+    'new_layout_attached_menu' => 'New layout has been attached to the menu',
+    'package_zipped_uploaded' => 'Package is zipped and uploaded',
+    'yesterday' => 'Yesterday',
+    'creative_design' => 'Creative Design',
+
+    // Table
+    'id'    => 'ID',
+    'name'  => 'Name',
+    'address'   => 'Address',
+    'date'  => 'Date',
+    'action'    => 'Action',
+    'edit'  => 'Edit',
+    'remove'     => 'Remove',
+    'assign'    => 'Assign',
+
+    // Activity / Status
+    'uploaded_successfully'     => 'Uploaded successfully',
+    'updated_successfully'  => 'Updated successfully',
+    'notifications_sent'    => 'Notifications have been sent',
+    'clear_all'     => 'Clear All',
+
+    // Shortcuts
+    'control_area'  => 'Control Area',
+    'activity'  => 'Activity',
+    'upload'    => 'Upload',
+    'users'     => 'Users',
+    'settings' => 'Settings',
 
     ## Login Page
     'signin'                       => 'Sign In',

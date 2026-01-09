@@ -7,6 +7,23 @@ return [
     'services'                     => 'الخدمات',
     'features'                     => 'المميزات',
 
+    // Misc / UI
+    'date_ranges' => 'نطاقات التاريخ',
+    'dashboard_note' => 'نص تجريبي للوحة التحكم.',
+    'lorem_earning' => 'لوريم إيبسوم دولار سيت أميت، consectetur adipiscing elit.',
+    'just_create_new_layout' => 'فقط إنشاء تخطيط جديد: Index، form، table',
+    'has_upload_new_files_to' => 'قام بتحميل ملفات جديدة إلى',
+    'front_end_development' => 'تطوير الواجهة الأمامية',
+    'has_commented_on' => 'قام بالتعليق على',
+    'advanced_table' => 'جدول متقدم',
+    'back_end_development' => 'تطوير الخلفية',
+    'created_new_group_for' => 'أنشأ مجموعة جديدة لـ',
+    'link_attached_to_menu' => 'تم إرفاق رابط بالقائمة',
+    'new_layout_attached_menu' => 'تم إرفاق التخطيط الجديد بالقائمة',
+    'package_zipped_uploaded' => 'تم ضغط ورفع الحزمة',
+    'yesterday' => 'أمس',
+    'creative_design' => 'تصميم إبداعي',
+
     ## Login Page
     'signin'                       => 'تسجيل الدخول',
     'login'                        => 'دخول',
