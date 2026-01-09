@@ -26,7 +26,7 @@ return [
     'icone'                        => 'Icone',
     'actions'                      => 'Actions',
     'no_records'                   => 'No Records In Table',
-    'addNew'                      => 'Add New',
+    'addNew'                       => 'Add New',
     'create'                       => 'Create',
     'show'                         => 'Show',
     'edit'                         => 'Edit',
