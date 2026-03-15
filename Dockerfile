@@ -19,6 +19,4 @@ RUN mkdir -p storage/framework/cache/data \
     && mkdir -p storage/logs \
     && chmod -R 777 storage bootstrap/cache
 
-RUN php artisan key:generate
-
-CMD ["sh", "-c", "sleep 20 && php artisan migrate --force && php artisan db:seed --force && php artisan serve --host=0.0.0.0 --port=$PORT"]
+CMD ["sh", "-c", "sleep 20 && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT"]
