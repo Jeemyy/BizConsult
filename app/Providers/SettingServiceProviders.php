@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Models\Setting;
+use Illuminate\Support\Facades\Schema;
+
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 
@@ -21,7 +23,14 @@ class SettingServiceProviders extends ServiceProvider
      */
     public function boot(): void
     {
-        $setting = Setting::findOrFail(1);
-        View::share('setting', $setting);
+        try {
+            // تأكد أن جدول settings موجود قبل الاستعلام
+            if (Schema::hasTable('settings')) {
+                $setting = \App\Models\Setting::first(); // أو find(1)
+                View::share('setting', $setting);
+            }
+        } catch (\Throwable $e) {
+            logger()->error('Error loading settings: '.$e->getMessage());
+        }
     }
 }
